@@ -9,7 +9,8 @@ using SC.BL.Domain;
 namespace SC.DAL.EF
 {
   internal class SupportCenterDbInitializer 
-    : DropCreateDatabaseIfModelChanges<SupportCenterDbContext>
+    //: DropCreateDatabaseIfModelChanges<SupportCenterDbContext>
+    :DropCreateDatabaseAlways<SupportCenterDbContext>
   {
     protected override void Seed(SupportCenterDbContext context)
     {

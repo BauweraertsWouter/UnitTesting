@@ -33,8 +33,8 @@ namespace SC.DAL.EF
       modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
       // Remove cascading delete for all required-relationships
-      modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-      modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
+      //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+      //modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
 
       // 'Ticket.TicketNumber' as unique identifier
       modelBuilder.Entity<Ticket>().HasKey(t => t.TicketNumber);
